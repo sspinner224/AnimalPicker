@@ -7,7 +7,7 @@ public class AnimalPicker{
         Scanner input = new Scanner(System.in);
         String animal;
         
-        System.out.println("What animal would you like to see: dog or cat?");
+        System.out.println("What animal would you like to see: dog, cat, or fish?");
 
         animal = input.nextLine();
 
@@ -18,8 +18,11 @@ public class AnimalPicker{
         } else if (animal.equals("cat")) {
             System.out.println("  ^~^  ,\n (\'Y\') )\n /   \\/ \n(\\|||/)");
             break;
+        } else if (animal.equals("fish")) {
+            System.out.println("  O  o\n          _\\_   o\n>(\'>   \\\\/  o\\ .\n       //\\___=\n          \'\'");
+            break;
         } else {
-            System.out.println("Please enter 'dog' or 'cat'");
+            System.out.println("Please enter 'dog', 'cat', or 'fish'");
             animal = input.nextLine();
         }  
         }
