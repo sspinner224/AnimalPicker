@@ -11,13 +11,19 @@ public class AnimalPicker{
 
         animal = input.nextLine();
 
-        if(animal.equals("dog")) {
+        while(!animal.equals("dog") || !animal.equals("cat")) {
+          if(animal.equals("dog")) {
             System.out.println("DOG ASCII ART HERE");
+            break;
         } else if (animal.equals("cat")) {
             System.out.println("CAT ASCII ART HERE");
+            break;
         } else {
             System.out.println("Please enter 'dog' or 'cat'");
+            animal = input.nextLine();
+        }  
         }
+        
 
 
 
